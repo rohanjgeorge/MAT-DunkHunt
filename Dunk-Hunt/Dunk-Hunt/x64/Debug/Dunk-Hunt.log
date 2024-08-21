@@ -1,0 +1,27 @@
+﻿  main.cpp
+  ServiceLocator.cpp
+  GraphicService.cpp
+  GameService.cpp
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,2): error C2653: 'Graphic': is not a class or namespace name
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,25): error C2143: syntax error: missing ';' before '*'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,42): error C2238: unexpected token(s) preceding ';'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,3): error C2653: 'Graphic': is not a class or namespace name
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,26): error C2143: syntax error: missing ';' before '*'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,47): error C2238: unexpected token(s) preceding ';'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,2): error C2653: 'Graphic': is not a class or namespace name
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,25): error C2143: syntax error: missing ';' before '*'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(9,42): error C2238: unexpected token(s) preceding ';'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,3): error C2653: 'Graphic': is not a class or namespace name
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,26): error C2143: syntax error: missing ';' before '*'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Header\Global\ServiceLocator.h(25,47): error C2238: unexpected token(s) preceding ';'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Source\Main\GameService.cpp(28,2): error C2248: 'Global::ServiceLocator::~ServiceLocator': cannot access private member declared in class 'Global::ServiceLocator'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Source\Main\GameService.cpp(55,30): error C2143: syntax error: missing ';' before 'Main::GameService::getGameState'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Source\Main\GameService.cpp(55,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Source\Main\GameService.cpp(55,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Source\Main\GameService.cpp(55,30): error C2556: 'int Main::GameService::getGameState(void)': overloaded function differs only by return type from 'Main::GameState Main::GameService::getGameState(void)'
+E:\rohanjgeorge\github\MAT-DunkHunt\Dunk-Hunt\Dunk-Hunt\Source\Main\GameService.cpp(55,30): error C2371: 'Main::GameService::getGameState': redefinition; different basic types
+  Generating Code...
