@@ -1,12 +1,14 @@
 #pragma once
 #include "../../Header/Graphic/GraphicService.h"
+#include "../../Header/UI/UIService.h"
 
 namespace Global {
 
 	class ServiceLocator
 	{
-private:
+	private:
 	Graphic::GraphicService* graphic_service;
+	UI::UIService* ui_service;
 
 	ServiceLocator();
 	~ServiceLocator();
@@ -23,5 +25,6 @@ private:
 		void render();
 
 		Graphic::GraphicService* getGraphicService();
+		UI::UIService* getUIService();
 	};
 }

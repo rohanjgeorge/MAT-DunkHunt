@@ -1,58 +1,69 @@
 #include "../../Header/Main/GameService.h"
 
-Main::GameService::GameService()
-{
-	service_locator = nullptr;
-	game_window = nullptr;
-}
+namespace Main {
 
-Main::GameService::~GameService()
-{
-	destroy();
-}
+	using namespace Global;
 
-void Main::GameService::initialize()
-{
-}
+	Main::GameService::GameService()
+	{
+		service_locator = nullptr;
+		game_window = nullptr;
+	}
 
-void Main::GameService::initializeVariables()
-{
-}
+	Main::GameService::~GameService()
+	{
+		destroy();
+	}
 
-void Main::GameService::showSplashScreen()
-{
-}
+	void Main::GameService::initialize()
+	{
+		service_locator->initialize();
+		initializeVariables();
+		showSplashScreen();
+	}
 
-void Main::GameService::destroy()
-{
-	delete(service_locator);
-	delete(game_window);
-}
+	void Main::GameService::initializeVariables()
+	{
+		game_window = service_locator->getGraphicService()->getGameWindow();
+	}
 
-void Main::GameService::ignite()
-{
-	service_locator = Global::ServiceLocator::getInstance();
-	initialize();
-}
+	void Main::GameService::showSplashScreen()
+	{
+		setGameState(GameState::SPLASH_SCREEN);
+		service_locator->getUIService()->showScreen();
+	}
 
-void Main::GameService::update()
-{
-}
+	void Main::GameService::destroy()
+	{
+		delete(service_locator);
+		delete(game_window);
+	}
 
-void Main::GameService::render()
-{
-}
+	void Main::GameService::ignite()
+	{
+		service_locator = Global::ServiceLocator::getInstance();
+		initialize();
+	}
 
-bool Main::GameService::isRunning()
-{
-	return false;
-}
+	void Main::GameService::update()
+	{
+	}
 
-void Main::GameService::setGameState(GameState new_state)
-{
-}
+	void Main::GameService::render()
+	{
+	}
 
-GameState Main::GameService::getGameState()
-{
-	return GameState();
+	bool Main::GameService::isRunning()
+	{
+		return false;
+	}
+
+	void Main::GameService::setGameState(GameState new_state)
+	{
+	}
+
+	GameState Main::GameService::getGameState()
+	{
+		return GameState();
+	}
 }
